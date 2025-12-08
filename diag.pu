@@ -1,0 +1,46 @@
+@startuml
+
+class ItemDespensa {
+    - Long Id
+    - String nome 
+    - LocalDate dataValidade 
+    - Quantidade quantidade
+    - Local localizacao
+}
+
+class Quantidade {
+    - double valor
+    - Unidade unidade
+}
+
+enum Unidade {
+    UNIDADE 
+    QUILO
+    LITRO 
+    PACOTE
+    GRAMA 
+    MILILITRO
+}
+
+class ComidaRefrigerada {
+    - int temperaturaIdeal
+}
+
+class ComidaCongelada {
+    - int temperaturaCongelamento
+}
+
+class Local {
+    - String nome
+    - String localizacao
+}
+
+ItemDespensa "1" *-- "1" Quantidade
+
+Local "1"--*"*"ItemDespensa
+Quantidade --> Unidade
+ComidaRefrigerada --|> ItemDespensa
+ComidaCongelada --|> ItemDespensa
+
+
+@enduml
