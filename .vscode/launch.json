@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DispensaApplication<Dispensa>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.daniel.Dispensa.DispensaApplication",
+            "projectName": "Dispensa",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
