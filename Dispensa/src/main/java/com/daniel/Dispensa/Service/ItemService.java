@@ -34,7 +34,7 @@ public class ItemService {
         existente.setQuantidade(itemAtualizado.getQuantidade());
         existente.setLocalizacao(itemAtualizado.getLocalizacao());
 
-        return itemRepository.save(existente);
+        return itemRepository.save(existente); hjhihihihii
     }
 
     //DELETAR
