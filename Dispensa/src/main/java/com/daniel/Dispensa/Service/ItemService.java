@@ -15,14 +15,14 @@ public class ItemService {
         this.itemRepository = itemRepository;
     }
 
-    //LISTAR skakmsdkasdmkadmkadmkoadmkso
+    //LISTAR 
     public List<ItemDespensa> getAll() {
         return itemRepository.findAll();
     }
 
     //CRIAR
     public ItemDespensa salve(ItemDespensa item){
-        return itemRepository.save(item);lgt 
+        return itemRepository.save(item);
     }
     //ATUALIZAR
     public ItemDespensa atualizarItem(Long id, ItemDespensa itemAtualizado) {
